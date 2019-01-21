@@ -21,7 +21,7 @@ Navigate to the folder where the yaml files for your configurations are on your 
 
 `exit`
 
-Get external IP
+### Get external IP and port
 
 `kubectl get pod pytorch-v2 -o yaml | grep hostIP`
 
