@@ -12,16 +12,19 @@ Files and guidelines on how to setup containers on the EPFL Kubernetes cluster
 Navigate to the folder where the yaml files for your configurations are on your (local) machine.
 
 `kubectl create -f pod-pytorch-v2.yaml`
+
 `kubectl create -f svc-pytorch-v2.yaml`
 
 #### Shutdown pod/service
 
-`kubectl delete pod pytorch-v2
-kubectl delete service svc-pytorch-v2`
+`kubectl delete pod pytorch-v2`
+
+`kubectl delete service svc-pytorch-v2`
 
 #### Enter/exit command line of pod
 
 `kubectl exec -it pytorch-v2 -- /bin/bash`
+
 `exit`
 
 ## Pytorch-v2 pod commands
