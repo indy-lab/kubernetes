@@ -15,17 +15,23 @@ Navigate to the folder where the yaml files for your configurations are on your 
 
 `kubectl create -f svc-pytorch-v2.yaml`
 
-#### Shutdown pod/service
-
-`kubectl delete pod pytorch-v2`
-
-`kubectl delete service svc-pytorch-v2`
-
 #### Enter/exit command line of pod
 
 `kubectl exec -it pytorch-v2 -- /bin/bash`
 
 `exit`
+
+Get external IP
+
+`kubectl get pod pytorch-v2 -o yaml | grep hostIP`
+
+Note that this only gives the ip address. The external port mapping can be found through `kubectl get all`
+
+#### Delete pod/service
+
+`kubectl delete pod pytorch-v2`
+
+`kubectl delete service svc-pytorch-v2`
 
 ## Pytorch-v2 pod commands
 
