@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pytorch-v2
+  labels:
+    name: pytorch-v2
+spec:
+  containers:
+  - name: pytorch-v2
+    image: awokeknowing/aitools
+    ports:
+        - containerPort: 8888
+    command:
+    - sleep
+    - infinity
+    volumeMounts:
+        - mountPath: /data
+          name: data
+          subPath: #username
+    resources:
+      limits:
+        nvidia.com/gpu: 1
+  volumes:
+  - name: data
+    persistentVolumeClaim:
+      claimName: lca4-scratch
