@@ -21,7 +21,7 @@ Navigate to the folder where the yaml files for your configurations are on your 
 
 `exit`
 
-### Get external IP and port
+#### Get external IP and port
 
 `kubectl get pod pytorch-v2 -o yaml | grep hostIP`
 
@@ -62,5 +62,8 @@ Note that this only gives the ip address. The external port mapping can be found
 #### Install matplotlib
 
 `pip install matplotlib`
+
+#### Install/Upgrade to PyTorch 0.4.1
+`pip install http://download.pytorch.org/whl/cu90/torch-0.4.1-cp36-cp36m-linux_x86_64.whl`
 
 ## Kubernetes config files
