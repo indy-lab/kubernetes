@@ -38,6 +38,8 @@ Note that this only gives the ip address. The external port mapping can be found
 
 ## Pytorch-v2 pod commands
 
+### Administration
+
 #### Check GPU status
 
 `nvidia-smi`
@@ -62,6 +64,8 @@ Note that this only gives the ip address. The external port mapping can be found
 
 `jupyter lab --ip=0.0.0.0 --port=8888 --allow-root`
 
+### Install software
+
 #### Install matplotlib
 
 `pip install matplotlib`
@@ -71,5 +75,8 @@ Note that this only gives the ip address. The external port mapping can be found
 
 #### Install CUDNN 7
 Follow https://medium.com/@zhanwenchen/install-cuda-and-cudnn-for-tensorflow-gpu-on-ubuntu-79306e4ac04e
+
+#### Install Tensorflow-gpu 1.8.0
+`pip install tensorflow-gpu==1.8`
 
 ## Kubernetes config files
