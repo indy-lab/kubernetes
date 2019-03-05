@@ -52,6 +52,17 @@ Note that this only gives the ip address. The external port mapping can be found
 
 `torch.cuda.get_device_name(0)`
 
+#### Check TensorFlow GPU
+
+`python`
+
+`import tensorflow as tf`
+
+```
+with tf.Session() as sess:
+    print(sess.list_devices())
+```
+
 #### Launch (test) webserver
 
 `python -m http.server 8888`
