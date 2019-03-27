@@ -44,6 +44,11 @@ Note that this only gives the ip address. The external port mapping can be found
 
 `nvidia-smi`
 
+#### GPU clean memory (dirty)
+kill all python processes (sleeping, but claiming GPU memory)
+
+`pkill -9 python`
+
 #### Check PyTorch GPU
 
 `python`
