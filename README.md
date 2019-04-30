@@ -86,7 +86,7 @@ with tf.Session() as sess:
 
 `pip install matplotlib`
 
-#### Install/Upgrade version
+#### Install/Upgrade PyTorch version
 0.4.1:
 
 `pip install http://download.pytorch.org/whl/cu90/torch-0.4.1-cp36-cp36m-linux_x86_64.whl`
