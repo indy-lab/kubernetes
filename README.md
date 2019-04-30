@@ -86,8 +86,15 @@ with tf.Session() as sess:
 
 `pip install matplotlib`
 
-#### Install/Upgrade to PyTorch 0.4.1
+#### Install/Upgrade version
+0.4.1:
+
 `pip install http://download.pytorch.org/whl/cu90/torch-0.4.1-cp36-cp36m-linux_x86_64.whl`
+
+1.0.0:
+
+`pip3 install https://download.pytorch.org/whl/cu90/torch-1.0.0-cp36-cp36m-linux_x86_64.whl`
+
 
 #### Install CUDNN 7
 Follow https://medium.com/@zhanwenchen/install-cuda-and-cudnn-for-tensorflow-gpu-on-ubuntu-79306e4ac04e
