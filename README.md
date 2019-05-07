@@ -91,7 +91,7 @@ with tf.Session() as sess:
 
 `pip install http://download.pytorch.org/whl/cu90/torch-0.4.1-cp36-cp36m-linux_x86_64.whl`
 
-1.0.0:
+1.0.0 (has cuda 9.0.176 embedded):
 
 `pip3 install https://download.pytorch.org/whl/cu90/torch-1.0.0-cp36-cp36m-linux_x86_64.whl`
 
