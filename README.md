@@ -102,4 +102,9 @@ Follow https://medium.com/@zhanwenchen/install-cuda-and-cudnn-for-tensorflow-gpu
 #### Install Tensorflow-gpu 1.8.0
 `pip install tensorflow-gpu==1.8`
 
+#### Install screen (& autocomplete)
+`echo "defshell -bash" > ~/.screenrc`
+
+`source ~/.screenrc`
+
 ## Kubernetes config files
