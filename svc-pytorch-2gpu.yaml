@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: svc-pytorch-2gpu
+  labels:
+    name: svc-pytorch-2gu
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 8888
+      name: jupyter
+  selector:
+    name: pytorch-2gpu
