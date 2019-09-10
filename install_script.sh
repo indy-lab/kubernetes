@@ -2,6 +2,7 @@
 wget https://repo.anaconda.com/archive/Anaconda3-2019.07-Linux-x86_64.sh
 sudo sh Anaconda3-2019.07-Linux-x86_64.sh
 
+# Open new terminal?
 # Create virtual environment my_env
 conda create -n my_env python=3.6
 conda activate my_env
