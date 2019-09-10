@@ -108,3 +108,8 @@ Follow https://medium.com/@zhanwenchen/install-cuda-and-cudnn-for-tensorflow-gpu
 `source ~/.screenrc`
 
 ## Kubernetes config files
+
+## Conda
+### Make virtual environment visible in Jupyter
+`conda activate myenv`  
+`python -m ipykernel install --user --name myenv --display-name "Python (myenv)"`
