@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: deep
+  labels:
+    name: deep
+spec:
+  hostIPC: true
+  containers:
+  - name: deep
+    image: nvcr.io/nvidia/tensorflow:19.02-py3
+    ports:
+        - containerPort: 8888
+    command:
+    - sleep
+    - infinity
+    volumeMounts:
+        - mountPath: /data
+          name: data
+          subPath: devos
+    resources:
+      limits:
+        nvidia.com/gpu: 1
+  volumes:
+  - name: data
+    persistentVolumeClaim:
+      claimName: indy1-scratch
