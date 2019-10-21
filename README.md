@@ -15,6 +15,10 @@ Navigate to the folder where the yaml files for your configurations are on your 
 
 `kubectl create -f svc-pytorch-v2.yaml`
 
+#### Check Kubernetes launching progress
+
+`kubectl describe pod`
+
 #### Enter/exit command line of pod
 
 `kubectl exec -it pytorch-v2 -- /bin/bash`
@@ -36,7 +40,10 @@ Note that this only gives the ip address. The external port mapping can be found
 #### Copy files from local machine to pod
 `kubectl cp ~/Documents/file.txt pytorch-v2:/data/`
 
-## Pytorch-v2 pod commands
+## Pytorch pod commands
+
+### Use install script
+`sudo bash install_script.sh`
 
 ### Administration
 
@@ -108,3 +115,8 @@ Follow https://medium.com/@zhanwenchen/install-cuda-and-cudnn-for-tensorflow-gpu
 `source ~/.screenrc`
 
 ## Kubernetes config files
+
+## Conda
+### Make virtual environment visible in Jupyter
+`conda activate myenv`  
+`python -m ipykernel install --user --name myenv --display-name "Python (myenv)"`
