@@ -15,6 +15,10 @@ Navigate to the folder where the yaml files for your configurations are on your 
 
 `kubectl create -f svc-pytorch-v2.yaml`
 
+#### Check Kubernetes launching progress
+
+`kubectl describe pod`
+
 #### Enter/exit command line of pod
 
 `kubectl exec -it pytorch-v2 -- /bin/bash`
