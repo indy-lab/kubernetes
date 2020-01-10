@@ -11,9 +11,9 @@ Files and guidelines on how to setup containers on the EPFL Kubernetes cluster
 
 Navigate to the folder where the yaml files for your configurations are on your (local) machine.
 
-`kubectl create -f pod-pytorch-v2.yaml`
+`kubectl create -f pod-deep.yaml`
 
-`kubectl create -f svc-pytorch-v2.yaml`
+`kubectl create -f svc-deep.yaml`
 
 #### Check Kubernetes launching progress
 
@@ -21,24 +21,24 @@ Navigate to the folder where the yaml files for your configurations are on your 
 
 #### Enter/exit command line of pod
 
-`kubectl exec -it pytorch-v2 -- /bin/bash`
+`kubectl exec -it deep -- /bin/bash`
 
 `exit`
 
 #### Get external IP and port
 
-`kubectl get pod pytorch-v2 -o yaml | grep hostIP`
+`kubectl get pod deep -o yaml | grep hostIP`
 
 Note that this only gives the ip address. The external port mapping can be found through `kubectl get all`
 
 #### Delete pod/service
 
-`kubectl delete pod pytorch-v2`
+`kubectl delete pod deep`
 
-`kubectl delete service svc-pytorch-v2`
+`kubectl delete service deep`
 
 #### Copy files from local machine to pod
-`kubectl cp ~/Documents/file.txt pytorch-v2:/data/`
+`kubectl cp ~/Documents/file.txt deep:/data/`
 
 ## Pytorch pod commands
 
