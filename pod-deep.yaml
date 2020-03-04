@@ -24,4 +24,4 @@ spec:
   volumes:
   - name: data
     persistentVolumeClaim:
-      claimName: indy1-scratch
+      claimName: indy1-scratch-tmp
