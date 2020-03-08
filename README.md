@@ -87,6 +87,10 @@ with tf.Session() as sess:
 
 `jupyter lab --ip=0.0.0.0 --port=8888 --allow-root`
 
+#### Launch VS Code Server
+
+`sudo sh code-server --port 8080 --host 0.0.0.0 --auth none`
+
 ### Install software
 
 #### Install matplotlib
