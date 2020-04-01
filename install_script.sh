@@ -22,7 +22,7 @@ python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
 #Install TensorFlow-gpu 1.14 and PyTorch 
 conda uninstall tensorflow
 conda install -y -n my_env tensorflow-gpu=1.14.0 # install tensorflow 1.14, which is tested with cuda 10
-conda install -y -n my_env pytorch=1.3.1 torchvision=0.4.2 cudatoolkit=10.1 -c pytorch
+conda install -y -n my_env pytorch=1.4.0 torchvision=0.5.0 cudatoolkit=10.1 -c pytorch
 
 # Git details
 git config --global user.email "your@email.com"
