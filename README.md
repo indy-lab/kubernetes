@@ -93,6 +93,9 @@ with tf.Session() as sess:
 
 ### Install software
 
+#### Install code-server web IDE (MS VS Code)
+See the [code-server GitHub page](https://github.com/cdr/code-server#releases)
+
 #### Install matplotlib
 
 `pip install matplotlib`
