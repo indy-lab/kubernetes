@@ -91,10 +91,16 @@ with tf.Session() as sess:
 
 `sudo sh code-server --port 8080 --host 0.0.0.0 --auth none`
 
-#### Launch TensorBoard
+#### TensorBoard
+
+##### Launching TensorBoard
 
 `tensorboard --logdir=./runs  --port=8888`
 
+##### Kill TensorBoard
+`ps -ef|grep tensorboard`
+
+`kill -9 <first/second pid>`
 ### Install software
 
 #### Install code-server web IDE (MS VS Code)
