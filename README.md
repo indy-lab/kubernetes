@@ -40,6 +40,10 @@ Note that this only gives the ip address. The external port mapping can be found
 #### Copy files from local machine to pod
 `kubectl cp ~/Documents/file.txt deep:/data/`
 
+#### Copy files and directories with progress bar
+
+`rsync -r --progress <source> <target>`
+
 ## Pytorch pod commands
 
 ### Use install script
