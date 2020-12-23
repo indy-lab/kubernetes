@@ -7,10 +7,12 @@ metadata:
 spec:
   hostIPC: true
   containers:
-  - name: deep
+  - name: deepcode
     image: nvcr.io/nvidia/tensorflow:19.10-py3
     ports:
         - containerPort: 8888
+        - containerPort: 8080
+        - containerPort: 6006
     command:
     - sleep
     - infinity
@@ -18,10 +20,15 @@ spec:
         - mountPath: /data
           name: data
           subPath: devos
+        - mountPath: /student
+          name: student
     resources:
       limits:
         nvidia.com/gpu: 1
   volumes:
   - name: data
     persistentVolumeClaim:
-      claimName: indy1-scratch-tmp
+      claimName: indy1-scratch
+  - name: student
+    persistentVolumeClaim:
+      claimName: indy1-student-scratch
