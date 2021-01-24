@@ -65,6 +65,13 @@ kill all python processes (sleeping, but claiming GPU memory)
 
 `pkill -9 python`
 
+#### Kill process(es)
+
+Replace `name` with part of the executed command (e.g. see (h)top):  
+`ps aux | grep Reptile`  
+Replace `id` with process id listed in the previous step
+`kill -9 id`  
+
 #### Check PyTorch GPU
 
 `python`
