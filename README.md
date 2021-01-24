@@ -55,6 +55,11 @@ Note that this only gives the ip address. The external port mapping can be found
 
 `nvidia-smi`
 
+#### GPU clean memory
+Replace `/dev/nvidia#` with the GPU number:  
+`for i in $(sudo lsof /dev/nvidia1 | grep python  | awk '{print $2}' | sort -u); do kill -9 $i; done`  
+source: https://forums.developer.nvidia.com/t/11-gb-of-gpu-ram-used-and-no-process-listed-by-nvidia-smi/44459/12
+
 #### GPU clean memory (dirty)
 kill all python processes (sleeping, but claiming GPU memory)
 
