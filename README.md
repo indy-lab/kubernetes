@@ -107,6 +107,13 @@ with tf.Session() as sess:
 
 `sudo sh code-server --port 8080 --host 0.0.0.0 --auth none`
 
+#### Shut down VS Code Server/...
+
+`pkill -f code-server`
+
+[source: How to kill all processes with a given partial name? [closed]
+](https://stackoverflow.com/questions/8987037/how-to-kill-all-processes-with-a-given-partial-name)
+
 #### TensorBoard
 
 ##### Launching TensorBoard
