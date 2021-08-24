@@ -3,11 +3,11 @@
 echo -e "\033[0;32mINSTALL SCRIPT: \033[0;33mStarting\033[0m"
 if [ ! -e Anaconda3-2019.07-Linux-x86_64.sh ]; then
 	echo -e "\033[0;31m Anaconda file not found. Downloading Anaconda 2019.07\033[0m"
-	wget https://repo.anaconda.com/archive/Anaconda3-2019.07-Linux-x86_64.sh
+	wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
 fi
 apt update
 apt install sudo -y
-sudo bash Anaconda3-2019.07-Linux-x86_64.sh -b -u
+sudo bash Anaconda3-2021.05-Linux-x86_64.sh -b -u
 
 echo -e "\033[0;32mINSTALL SCRIPT: \033[0;33mAnaconda installed\033[0m"
 # Source newly created conda command
